@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Nuit de l'Info - Compétition 2024</title>
+    <link rel="stylesheet" href="assets/stylesheet.css" />
+  </head>
+  <style>
+    /* Corps de la page démesurément bordélique */
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color: lightgreen;
+      margin: 0;
+      padding: 0;
+      color: darkviolet;
+    }
+
+    header {
+      padding: 20px;
+      background-color: yellow;
+      text-align: center;
+    }
+
+    section {
+      margin: 50px;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    #home,
+    #registration,
+    #rules,
+    #teams,
+    #schedule {
+      border: 3px dashed black;
+      box-shadow: 5px 5px 15px red;
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 20px;
+      border: 2px solid black;
+      background-color: red;
+      color: white;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: yellow;
+      color: black;
+    }
+
+    footer {
+      background-color: pink;
+      padding: 15px;
+    }
+  </style>
+  <body>
+    <header style="background-color: orange; color: purple; padding: 20px">
+      <h1>La Nuit de l'Info - Compétition 2024</h1>
+      <p style="font-size: 1.5rem">
+        Bienvenue dans le chaos, bienvenue à la compétition la plus folle de
+        l'année !
+      </p>
+    </header>
+
+    <!-- Page d'accueil -->
+    <section
+      id="home"
+      style="background-color: yellow; color: blue; padding: 50px"
+    >
+      <h2>Bienvenue à la Nuit de l'Info !</h2>
+      <p style="font-size: 1.2rem">
+        Vous êtes sur le point de participer à l'événement le plus épique de
+        l'année ! Préparez-vous à coder, à vous divertir et à découvrir l'enfer
+        du bug...
+      </p>
+      <p>
+        Heureusement, vous êtes entouré(e)s de super développeurs prêts à
+        affronter tous les défis !
+      </p>
+      <button
+        style="background-color: red; padding: 15px 30px; font-size: 1.5rem"
+      >
+        Commencer !
+      </button>
+    </section>
+
+    <!-- Inscription -->
+    <section
+      id="registration"
+      style="
+        background-color: purple;
+        color: white;
+        padding: 40px;
+        text-align: center;
+      "
+    >
+      <h2>Inscription</h2>
+      <p>
+        Envie de participer ? Remplissez le formulaire ci-dessous et vous serez
+        de la partie !
+      </p>
+
+      <label for="name" style="font-size: 1.2rem">Nom :</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        style="width: 100%; padding: 10px; font-size: 1rem; margin-bottom: 20px"
+      /><br />
+      <label for="email" style="font-size: 1.2rem">Email :</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        style="width: 100%; padding: 10px; font-size: 1rem; margin-bottom: 20px"
+      /><br />
+      <a href="fou.html"
+        ><button
+          style="
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+          "
+        >
+          S'inscrire
+        </button></a
+      >
+    </section>
+
+    <section
+      id="rules"
+      style="
+        background-color: lime;
+        color: red;
+        padding: 50px;
+        text-align: center;
+      "
+    >
+      <h2>Les Règles de la Compétition</h2>
+      <ul style="list-style-type: none; padding: 0">
+        <li style="font-size: 1.2rem">
+          1. Pas de tricherie (même si on t'a dit que c'était possible).
+        </li>
+        <li style="font-size: 1.2rem">
+          2. Doit coder avec style (on veut voir du CSS moderne !).
+        </li>
+        <li style="font-size: 1.2rem">
+          3. Respecter les délais. Non, il n'y a pas de délai flexible !
+        </li>
+        <li style="font-size: 1.2rem">
+          4. Vous pouvez gagner des badges. Pas sûr qu'ils servent à quelque
+          chose.
+        </li>
+        <li style="font-size: 1.2rem">
+          5. La participation à l'événement vous rend officiellement génial(e).
+        </li>
+      </ul>
+    </section>
+
+    <section
+      id="teams"
+      style="background-color: cyan; color: purple; padding: 40px"
+    >
+      <h2>Les Équipes</h2>
+      <p style="font-size: 1.2rem">
+        Voici les équipes qui vont s'affronter dans une bataille épique de code.
+        Qui sera le roi du bug ?
+      </p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px">
+        <div style="background-color: orange; padding: 20px; color: black">
+          <h3>Team Java</h3>
+          <p>
+            Coding hard, bugging harder. Faites attention à la machine Java !
+          </p>
+        </div>
+        <div style="background-color: green; padding: 20px; color: white">
+          <h3>Team Python</h3>
+          <p>Les serpents sont de retour, prêts à enrouler tout le monde !</p>
+        </div>
+        <div style="background-color: blue; padding: 20px; color: yellow">
+          <h3>Team C++</h3>
+          <p>Une équipe qui compile plus vite que son ombre !</p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="schedule"
+      style="background-color: magenta; color: white; padding: 50px"
+    >
+      <h2>Calendrier & Résultats</h2>
+      <p>
+        Découvrez le programme complet et les résultats en temps réel (ou
+        presque) !
+      </p>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 20px">
+        <thead>
+          <tr style="background-color: black; color: white">
+            <th style="padding: 15px">Date</th>
+            <th style="padding: 15px">Événement</th>
+            <th style="padding: 15px">Résultats</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background-color: yellow">
+            <td style="padding: 15px">01/12/2024</td>
+            <td style="padding: 15px">Phase 1 - Codage Commence</td>
+            <td style="padding: 15px">En cours...</td>
+          </tr>
+          <tr style="background-color: green">
+            <td style="padding: 15px">02/12/2024</td>
+            <td style="padding: 15px">Phase 2 - Test des Projets</td>
+            <td style="padding: 15px">Pas de résultat encore</td>
+          </tr>
+          <tr style="background-color: blue">
+            <td style="padding: 15px">03/12/2024</td>
+            <td style="padding: 15px">Annonce des Gagnants</td>
+            <td style="padding: 15px">Les champions de la Nuit !</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer
+      style="
+        background-color: red;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      "
+    >
+      <p style="font-size: 1.2rem">
+        © 2024 La Nuit de l'Info. Tous droits réservés. Même si on est un peu
+        perdus avec tout ce chaos.
+      </p>
+    </footer>
+  </body>
+</html>

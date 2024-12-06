@@ -1,0 +1,80 @@
+/* Style global pour le body */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centrage vertical et horizontal */
+  }
+  
+  /* Conteneur du jeu */
+  #game-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;  /* Limite la largeur pour un meilleur rendu */
+    height: 400px;
+    background-color: #fff; /* Ajout d'un fond blanc */
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Titre principal */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Message sous le titre */
+  #message {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Boutons */
+  button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Bouton plus arrondi */
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+    margin-top: 20px;
+    outline: none; /* Enlève le contour bleu lors du focus */
+  }
+  
+  /* Hover sur les boutons */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style du bouton dans le jeu */
+  #moveButton {
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Animation du bouton lors du survol */
+  #moveButton:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bc: #000000;
+  --whc: #ffff;
+}
+body {
+  background-color: #ff00ff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #00ff00;
+}
+h1 {
+  color: red;
+}
+#innersign {
+  color: var(--bc);
+  background-color: var(--whc);
+  padding: 10px;
+  margin-top: 50px;
+}
+input {
+  border: 5px dotted #ff0000;
+  padding: 15px;
+  margin: 20px;
+  width: 50%;
+  background-color: #00ffff;
+  color: #000000;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: #ffff00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(45deg, red, yellow);
+  border: 5px solid #00ff00;
+  cursor: crosshair;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px;
+}
+
+.name,
+.nickname,
+.mail,
+.phone {
+  position: relative;
+  left: -20px;
+  margin-bottom: -10px;
+  width: 25%;
+}
+.nickname {
+  margin-left: 50px;
+}
+.mail {
+  width: 40%;
+}
+.main {
+  background: repeating-linear-gradient(
+    45deg,
+    #ff0000,
+    #ff0000 10px,
+    #00ff00 10px,
+    #00ff00 20px
+  );
+  padding: 20px;
+  box-shadow: 0 0 20px 10px yellow;
+  border: 10px double #00c3ff;
+}
+
+input {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #0000ff;
+  }
+  .form {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #ffff00;
+    color: #ff00ff;
+  }
+  input {
+    width: 100%;
+    transform: rotate(-10deg);
+  }
+  button {
+    width: 300px;
+    height: 100px;
+    animation: bounce 0.5s infinite;
+  }
+
+  /* Ajoute une animation au conteneur */
+  .main {
+    animation: shake 1s infinite;
+  }
+
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}

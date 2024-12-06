@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de Fou</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background-color: #ff00ff;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      animation: backgroundColorChange 1.5s infinite alternate;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      animation: bounce 1s ease-in-out infinite;
+    }
+
+    .message {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 20px;
+      animation: slideIn 2s ease-in-out infinite;
+    }
+
+    .crazy-button {
+      margin-top: 30px;
+      padding: 20px;
+      font-size: 1.5rem;
+      background-color: yellow;
+      color: red;
+      border: 3px solid blue;
+      border-radius: 50px;
+      cursor: pointer;
+      animation: spin 3s linear infinite;
+    }
+
+    .crazy-button:hover {
+      background-color: red;
+      color: yellow;
+      animation: shake 0.5s ease-in-out infinite;
+    }
+
+    .circle {
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: 40%;
+      animation: moveCircle 4s ease-in-out infinite;
+    }
+
+    .floating-text {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .crazy-box {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      position: absolute;
+      bottom: 10%;
+      right: 5%;
+      animation: boxBounce 1s ease-in-out infinite;
+    }
+
+    /* Animations délirantes */
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    @keyframes backgroundColorChange {
+      0% {
+        background-color: #ff00ff;
+      }
+      50% {
+        background-color: #ff00cc;
+      }
+      100% {
+        background-color: #ff00ff;
+      }
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(-10deg);
+      }
+      75% {
+        transform: rotate(10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes moveCircle {
+      0% {
+        top: 20%;
+        left: 40%;
+      }
+      50% {
+        top: 40%;
+        left: 60%;
+      }
+      100% {
+        top: 20%;
+        left: 40%;
+      }
+    }
+
+    @keyframes float {
+      0% {
+        top: 60%;
+        transform: translateX(-50%) rotate(0deg);
+      }
+      50% {
+        top: 50%;
+        transform: translateX(-50%) rotate(20deg);
+      }
+      100% {
+        top: 60%;
+        transform: translateX(-50%) rotate(0deg);
+      }
+    }
+
+    @keyframes boxBounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-50px);
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <h1 class="title">Bienvenue le dash!</h1>
+      <p class="message">si la page se ferme reouvrez la page</p>
+      <button class="crazy-button">Clique ici... ou pas!</button>
+      <div class="circle"></div>
+      <div class="floating-text">Remplissez le formulaire ci desoous</div>
+      <div class="crazy-box"></div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        window.location.href = "form.html";
+      }, 5000);
+    </script>
+  </body>
+</html>
